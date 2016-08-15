@@ -11,11 +11,12 @@ import AVFoundation
 import QRCoder
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scanner = QRCoder()
-        scanner.scan()
-        
+        let qr = QRCoder()
+        let image = qr.generateImage("二维码生成器", avatarImage: nil)
+        imageView.image = image
     }
 
    

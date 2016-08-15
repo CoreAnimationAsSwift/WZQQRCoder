@@ -16,11 +16,28 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ga-Aa-EW6">
+                                <rect key="frame" x="180" y="199" width="240" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="lep-yx-x2z"/>
+                                    <constraint firstAttribute="width" constant="240" id="xzv-QE-pr3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ga-Aa-EW6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uvm-ki-OPP"/>
+                            <constraint firstItem="3ga-Aa-EW6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lfJ-5k-RtK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="3ga-Aa-EW6" id="47B-fD-b23"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="311"/>
         </scene>
     </scenes>
 </document>
